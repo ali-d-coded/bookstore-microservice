@@ -1,0 +1,31 @@
+GET http://localhost:3000/users
+
+
+
+###FindAll
+GET http://localhost:3000/books
+
+###FindOne
+GET http://localhost:3000/books/3
+
+
+###Create
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title":"Alchemist",
+    "author":"Poulo Coelho",
+    "rating":5
+}
+
+###update
+PATCH http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+    "title":"Think Like A monk",
+    "author":"Shetty",
+    "rating":5
+}
+
